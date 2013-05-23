@@ -18,7 +18,8 @@ namespace TeamWubWub.Controllers
 
         public ActionResult Index()
         {
-            return View(db.DroppedBasses.ToList());
+            var data = from x in db.DroppedBasses orderby x.Id descending select x; 
+            return View(data);
         }
 
         //

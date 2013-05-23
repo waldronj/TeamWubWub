@@ -187,14 +187,12 @@
       <DependentUpon>BlogModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\DroppedBass.cs" />
-    <Compile Include="Models\DroppedBass.cs">
-      <DependentUpon>BlogModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-responsive.css" />
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\main.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <EntityDeploy Include="Models\BlogModel.edmx">
