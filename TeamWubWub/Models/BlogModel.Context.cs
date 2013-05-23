@@ -13,10 +13,10 @@ namespace TeamWubWub.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BlogModelContainer : DbContext
+    public partial class TeamWubWubEntities : DbContext
     {
-        public BlogModelContainer()
-            : base("name=BlogModelContainer")
+        public TeamWubWubEntities()
+            : base("name=TeamWubWubEntities")
         {
         }
     
@@ -25,5 +25,6 @@ namespace TeamWubWub.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public DbSet<DroppedBass> DroppedBasses { get; set; }
     }
 }
